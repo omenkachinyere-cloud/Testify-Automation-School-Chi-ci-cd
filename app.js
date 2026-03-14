@@ -30,10 +30,155 @@ console.log(fullName);
 // }
 
 const age = 59;
-if (age>=25 && age<=57) {
-    console.log('You are eligible to rent a car.');
-} else if (age>=57) {
-    console.log('You are not eligible to rent a car.')
-}  else {
-    console.log('You are too young to rent a car.');
+// if (age>=25 && age<=57) {
+//     console.log('You are eligible to rent a car.');
+// } else if (age>=57) {
+//     console.log('You are not eligible to rent a car.')
+// }  else {
+//     console.log('You are too young to rent a car.');
+// }
+
+const day = 'Monday';
+// if (day === 'Thursday') {
+//     console.log('Throwback Thursday');
+// } else if (day === 'Monday') {
+//     console.log('Monday again!!');
+//     } else if (day === 'Saturday') {
+//         console.log('Happy Saturday!');
+//     } else {
+//         console.log('Just Go work for your money');
+//     }
+
+switch (day) { 
+    case 'Thursday':
+        console.log('Throwback Thursday');
+        break;
+    case 'Monday':
+        console.log('Monday again!!');
+        break;
+    case 'Saturday':
+        console.log('Happy Saturday!');
+        break;
+    default:
+        console.log('Just Go work for your money');
 }
+
+// let star = 1;
+// while(star <=20000){
+//     if (star === 1) {
+//         console.log(star + ' star');
+//     } else {
+//     console.log(star + ' stars');
+//     }
+//     star = star + 1
+// }
+
+for (let star = 1; star <= 30; star = star + 1) {
+    if (star === 1) {
+        console.log(star + ' star');
+   } else {
+console.log(star + ' stars');
+    } //star = star + 1
+}
+
+for (let number =1; number <=51; number = number + 1) {
+    if (number % 2 === 0) {
+        console.log(number + ' is even');
+    } else {
+        console.log(number + ' is odd');
+    }
+}
+
+// function MyOwn() { //function declaration
+//     console.log("This is my own function");
+// }
+// MyOwn(); //function call
+
+// function Greetings(name) {
+//     console.log("Hello, " + name + "!");
+// }
+// Greetings("Amarachi");
+
+function calculateArea(radius) {
+    const area = Math.PI * radius * radius;
+    return area;
+}
+const radius = 5;
+const area = calculateArea(radius);
+console.log("The area of the circle with radius " + radius + " is: " + area);
+calculateArea(10);
+
+function addNumbers(firstNumber, secondNumber) {
+    const sum = firstNumber + secondNumber;
+    console.log (sum);
+}
+addNumbers(81, 914 );
+
+function calculateAreaOfRectangle(length, width) {
+    const area = length * width;
+    console.log("The area of the rectangle with length " + length + " and width " + width + " is: " + area);
+}
+calculateAreaOfRectangle(5.2, 10.9);
+
+function converter(dollars) {
+    //conversion ratefrom dollars to naira is 1415
+    const nairaValue = dollars * 1415;
+    return nairaValue;
+}
+const nairaValue = converter(310);
+console.log(nairaValue);
+
+// const myBaby = 'Lulu'; // global variable
+
+// function greetings(){
+//     console.log("Hello, " + myBaby);
+//     function beninGreetings(){
+//         console.log("Obowa, " + myBaby);
+//     }
+//     beninGreetings();
+// }
+// greetings();
+
+ // global variable
+
+// function greetings(){
+//     const myBaby = 'Ilulu';
+//     console.log("Hello, " + myBaby);
+// }
+//     function beninGreetings(){
+//         console.log("Obowa, " + myBaby);
+//     }
+//     beninGreetings();
+
+//     console.log(myBaby); //accessing the variable declared in the parent function
+// greetings();
+
+sing("Jesus You Love Me Too Much");
+function sing(MercyChinwo) {
+    console.log("I will sing " + MercyChinwo + " all day long!");
+}
+
+const mysong = function (song) {
+    console.log("I will sing " + song + " while alive!");
+};
+mysong("Oshimiri Atata");
+
+const myArray = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+console.log(myArray);
+
+const numberArray = [100, 85, 70, 55, 40, 25, 10];
+console.log(numberArray);
+
+const emptyArray = [];
+console.log(emptyArray.length);
+
+const myArray2 = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+const seventhElement = myArray2[12];
+myArray2[6] = 'NewMonth';
+console.log(myArray2);
+
+const emptyArray2 = [];
+emptyArray2[0] = 'First Element';
+emptyArray2[1] = 'Second Element';
+emptyArray2[6] = 'Seventh Element';
+console.log(emptyArray2.length);
