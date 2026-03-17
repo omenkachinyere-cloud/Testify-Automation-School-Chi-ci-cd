@@ -233,7 +233,15 @@ const brand = {
     tyre:'dunlop',
     seater: 8,
     reverseCamera: true,
-}
+    toggleToyota: function() {
+        if (brand.isToyota === true) {
+            brand.isToyota = false;
+        } else {
+            brand.isToyota = true;
+        }
+    }
+};
 
 console.log(myDesire.name);
-console.log(brand['tyre']);
+brand.toggleToyota();
+console.log(brand['isToyota']);
