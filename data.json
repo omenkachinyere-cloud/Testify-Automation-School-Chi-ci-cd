@@ -1,0 +1,8 @@
+{
+    "name": "Vehicle",
+    "Type": "Car",
+    "color": "Grey",
+    "price": 15000000,
+    "year": 2026,
+    "parts": ["side mirror", "engine", "tyre", "steering wheel", "brakes"]
+}
