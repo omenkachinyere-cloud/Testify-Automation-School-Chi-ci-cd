@@ -308,7 +308,28 @@ let books = [
   }
 ];
 
-// Modern approach: filter + forEach
-books
-  .filter(book => book.reading)   // keep only books with reading = true
-  .forEach(book => console.log(book));
+// 
+
+function printMultiplicationTables(upToTable, upToMultiplier) {
+  for (let i = 1; i <= upToTable; i++) {
+    let row = "";
+    for (let j = 1; j <= upToMultiplier; j++) {
+      row += `${i} x ${j} = ${i * j}\t`;
+    }
+    console.log(row);
+  }
+}
+
+// Print a table containing multiplication tables.
+function printMultiplicationTables(upToTable, upToMultiplier) {
+  for (let i = 1; i <= upToTable; i++) {
+    let row = "";
+    for (let j = 1; j <= upToMultiplier; j++) {
+      row += `${i} x ${j} = ${i * j}\t`;
+    }
+    console.log(row);
+  }
+}
+// Example: tables from 1 to 10, each up to 12
+printMultiplicationTables(10, 12);
+
